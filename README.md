@@ -15,10 +15,10 @@ I will use the sqlite3 and argparse libraries
 **Specifics**
 
 - Categories of transactions : Spending, Revenue, Deposit, Withdrawal
-    Categories of Spending : Nutrition, Clothing, Housing, Transport, Distraction
-    Categories of Revenue : Salary, Dividend, Capital Gain
-    Categories of Deposit : Cash, Cheque, Wire
-    Category of Withdrawal : Cash, Cheque, Wire, Subscription
+    - Categories of Spending : Nutrition, Clothing, Housing, Transport, Investment, Distraction
+    - Categories of Revenue : Salary, Dividend, Capital Gain
+    - Categories of Deposit : Cash, Cheque, Wire
+    - Category of Withdrawal : Cash, Cheque, Wire, Subscription
 
 - Categories of Entities transacting :
     Friend, Employer, Broker, Merchant

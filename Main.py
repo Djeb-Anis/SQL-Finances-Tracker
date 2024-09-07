@@ -1,18 +1,27 @@
 import sqlite3
 import argparse
+# Will probably need to import sys or something else for the correct file paths
 
-def execute_sql_script(title, function_filename):
-    try:
-        with open(function_filename, 'r') as f:
-            script = f.read()
-        conn = sqlite3.connect(str(title))
-        cursor = conn.cursor()
-        cursor.executescript(script)
-        conn.commit()
-        conn.close()
-        print(f"Script {function_filename} executed successfully.")
-    except Exception as e:
-        print(f"Error executing script {function_filename}: {str(e)}")
+# def execute_sql_script(function_filename):
+#     try:
+#         with open(function_filename, 'r') as f:
+#             script = f.read()
+#         conn = sqlite3.connect('pers_finance.db')
+#         cursor = conn.cursor()
+#         cursor.executescript(script)
+#         conn.commit()
+#         conn.close()
+#         print(f"Script {function_filename} executed successfully.")
+#     except Exception as e:
+#         print(f"Error executing script {function_filename}: {str(e)}")
+#
+
+#-----CRÉATION BASE DE DONNÉES AVEC MES TABLES-----#
+conn = sqlite3.connect('pers_finance.db')
+cursor = conn.cursor()
+cursor.execute()
+
+#-----CRÉATION BASE DE DONNÉES AVEC MES TABLES-----#
 
 
 
@@ -21,6 +30,14 @@ def execute_sql_script(title, function_filename):
 # Example Function
 # def create_tables():
 #     execute_sql_script('create_tables.sql')
+
+def AddTransaction():
+    cursor.execute('SELECT Category FROM pers_finance.Transactions ')
+    categorie = str(input("Quel Catégorie de transaction souhaitez-vous ajouter?"))
+
+
+
+
 
 #-----FUNCTIONS HERE-----#
 
