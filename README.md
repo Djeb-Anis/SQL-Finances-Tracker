@@ -24,7 +24,7 @@ I will use the sqlite3 and argparse libraries
     Friend, Employer, Broker, Merchant
 
 - Each transaction will have :
-    A unique ID, a sign (+,-) with the amount, origin and destination, type of transaction, type of transaction subclass, recurrence (if applicable)
+    A unique ID, a sign (+,-) with the amount, origin and destination, date, type of transaction, type of transaction subclass, recurrence (if applicable)
 
 
 (Will need a list of all)
@@ -34,6 +34,7 @@ I will use the sqlite3 and argparse libraries
 
 - AddTransaction
 - RemoveTransaction
+- ModifyTransaction
 
 
 - AddSpendingType
@@ -55,15 +56,6 @@ I will use the sqlite3 and argparse libraries
 - RemoveWithdrawalType
 - ModifyWithdrawalType
 
-
-- AddSpending
-- RemoveSpending
-- AddRevenue
-- RemoveRevenue
-- AddDeposit
-- RemoveDeposit
-- AddWithdrawal
-- RemoveWithdrawal
 
 
 - AddEntity
