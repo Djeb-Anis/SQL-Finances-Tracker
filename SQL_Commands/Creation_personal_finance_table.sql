@@ -103,6 +103,7 @@ CREATE TABLE IF NOT EXISTS Entity_Types(
 INSERT INTO Entity_Types (Type) VALUES
     ('Friend'),
     ('Employer'),
+    ('Bank'),
     ('Broker'),
     ('Merchant');
 

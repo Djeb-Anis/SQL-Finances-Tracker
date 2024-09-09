@@ -21,10 +21,10 @@ I will use the sqlite3 and argparse libraries
     - Category of Withdrawal : Cash, Cheque, Wire, Subscription
 
 - Categories of Entities transacting :
-    Friend, Employer, Broker, Merchant
+    Friend, Employer, Bank, Broker, Merchant
 
 - Each transaction will have :
-    A unique ID, a sign (+,-) with the amount, origin and destination, date, type of transaction, type of transaction subclass, recurrence (if applicable)
+    A unique ID, a sign (+,-) with the amount, origin, origin type, destination, destination type, date, type of transaction, type of transaction subclass, recurrence (if applicable)
 
 
 (Will need a list of all)
